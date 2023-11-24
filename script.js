@@ -22,9 +22,6 @@ function firstpageanimation(){
             duration: 2,
             delay: -1,
             stagger: .5
-            
-            
-            
           })
           .from("#bottomnav", {
             y: "-10",
