@@ -18,7 +18,7 @@ function firstpageanimation(){
             ease: Expo.easeInOut,
             duration: 2,
             delay: -1,
-            stagger: 0.2,
+            stagger: .5
           })
           .from("#herofooter", {
             y: -10,
