@@ -1,6 +1,9 @@
-const scroll = new LocomotiveScroll({
+document.addEventListener("DOMContentLoaded", function() {
+  const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true
+  
+  });
 });
 
 function firstpageanimation(){
@@ -10,7 +13,7 @@ function firstpageanimation(){
         tl.from("#nav", {
           y: "-10",
           opacity: 0,
-          duration: 1.5,
+          duration: 1,
           ease: Expo.easeInOut,
         })
           .to(".boundingelem", {
@@ -18,16 +21,20 @@ function firstpageanimation(){
             ease: Expo.easeInOut,
             duration: 2,
             delay: -1,
-            stagger: 0.2,
+            stagger: .5
+            
+            
+            
           })
-          .from("#herofooter", {
-            y: -10,
+          .from("#bottomnav", {
+            y: "-10",
             opacity: 0,
             duration: 1.5,
             delay: -1,
             ease: Expo.easeInOut,
           });
       }
+      firstpageanimation();
 
 function mousefollower(){
     window.addEventListener("mousemove", function(dets){
@@ -65,6 +72,9 @@ document.querySelectorAll(".element").forEach(function (element) {
 });
 
 
+
+
+
 function updateClock() {
   const now = new Date();
   const hours = now.getHours().toString().padStart(2, '0');
@@ -81,3 +91,4 @@ setInterval(updateClock, 1000);
 
 // Initial call to set the initial clock state
 updateClock();
+
