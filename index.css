@@ -21,6 +21,7 @@
  .bounding {
   width: fit-content;
   overflow: hidden;
+  padding-right: 40px;
 }
 
 .bounding .boundingelem {
@@ -90,6 +91,9 @@
  .secondclass {
    width: fit-content;
    font-family:   Tahoma, sans-serif;
+   display: flex;
+   align-items: end;
+   flex-direction: column;
  }
  .secondclass h5{
    text-align: right;
